@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
 
 
     <title>Макет №3</title>
@@ -16,10 +17,13 @@
         
         <header class="header">
             <div class="container">
-               <div class="logo"> 
-                    <img class="logo__image" src="images/logo.svg" alt="logo">    
+               <div class="logo">
+                   <a href="#">
+                      <img class="logo__image" src="images/logo.svg" alt="logo">   
+                   </a> 
+                      
                 </div>
-                <div class="menu">
+                <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#" class="menu__link">Афиша</a>
@@ -37,7 +41,7 @@
                             <a href="#" class="menu__link">Контакты</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
 
                 <div class="illustration">
                     <img src="images/1.png" alt="illustration" class="illustration__image">
@@ -55,73 +59,78 @@
 
         </header>
 
-        <div class="info">
+        <section class="info">
             <div class="container">
                 <h2 class="title">
                 Мероприятия
                 </h2>
-            
-                <div class="info__image">
-                    <img src="images/2.png" alt="image">
-                </div>
-                <div class="info__title">
-                    <h3>Первый день лета!</h3>
-                </div>
-                <div class="info__text">
-                    Отпразнуйте его вместе с нами!
-                </div>
-
-                <div class="info__date">
-                    1 июня
-                </div>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <div class="info__image">
+                            <img src="images/2.png" alt="image">
+                        </div>
+                        <div class="info__title">
+                            <h3>Первый день лета!</h3>
+                        </div>
+                        <div class="info__text">
+                            Отпразнуйте его вместе с нами!
+                        </div>
+        
+                        <div class="info__date">
+                            1 июня
+                        </div>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__image">
+                            <img src="images/2.png" alt="image">
+                        </div>
+                        <div class="info__title">
+                            <h3>Первый день лета!</h3>
+                        </div>
+                        <div class="info__text">
+                            Отпразнуйте его вместе с нами!
+                        </div>
+        
+                        <div class="info__date">
+                            1 июня
+                        </div>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__image">
+                            <img src="images/2.png" alt="image">
+                        </div>
+                        <div class="info__title">
+                            <h3>Первый день лета!</h3>
+                        </div>
+                        <div class="info__text">
+                            Отпразнуйте его вместе с нами!
+                        </div>
+        
+                        <div class="info__date">
+                            1 июня
+                        </div>
+                    </li>
+                </ul>
+                
 
                 
-                
-                <div class="info__image">
-                    <img src="images/2.png" alt="image">
-                </div>
-                <div class="info__title">
-                    <h3>Первый день лета!</h3>
-                </div>
-                <div class="info__text">
-                    Отпразнуйте его вместе с нами!
-                </div>
-
-                <div class="info__date">
-                    1 июня
-                </div>
-
-                
-                
-                <div class="info__image">
-                    <img src="images/2.png" alt="image">
-                </div>
-                <div class="info__title">
-                    <h3>Первый день лета!</h3>
-                </div>
-                <div class="info__text">
-                    Отпразнуйте его вместе с нами!
-                </div>
-
-                <div class="info__date">
-                    1 июня
-                </div>
+    
             </div>
             
-        </div>
+        </section>
         
-        <div class="place">
+        <section class="place">
             <div class="container">
                 <h2 class="title">Площадки дял мероприятий</h2>
 
-                <div class="place__text">
+                <div class="place__desc">
                     Каждая площадка создана для мероприятий разных направлений и масштаба.
                 </div>
                 <div class="place__image_1">
                     <img src="images/3.png" alt="image">
                     <div class="geo">
                         <img src="images/geo.svg" alt="geo">
-                        <div class="geo__text">
+                        <div class="geo__desc">
                             Пространство Star Wars
                         </div>
                     </div>
@@ -130,7 +139,7 @@
                     <img src="images/4.png" alt="image">
                     <div class="geo">
                         <img src="images/geo.svg" alt="geo">
-                        <div class="geo__text">
+                        <div class="geo__desc">
                             Пространство Star Wars
                         </div>
                     </div>
@@ -139,7 +148,7 @@
                     <img src="images/5.png" alt="image">
                     <div class="geo">
                         <img src="images/geo.svg" alt="geo">
-                        <div class="geo__text">
+                        <div class="geo__desc">
                             Пространство Star Wars
                         </div>
                     </div>
@@ -148,9 +157,9 @@
             </div>
             
 
-        </div>
+        </section>
 
-        <div class="life">
+        <section class="life">
             <div class="container">
                <h2 class="title">Наша жизнь</h2>
         
@@ -169,9 +178,9 @@
                     </li>
                 </ul>
             </div> 
-        </div>
+        </section>
         
-        <div class="map">
+        <section class="map">
             <div class="container">
                 <h2 class="title">
                     Наши координаты
@@ -186,7 +195,7 @@
                     Москва, Балашиха, Советская улица,36
                 </h3>
 
-                <div class="map__text">
+                <div class="map__desc">
                     Схема проезда
                 </div>
 
@@ -195,35 +204,41 @@
                     <a href="mailto:info@fabrika.center" class="map__mail">info@fabrika.center</a>
                 </div>  
             </div>
-        </div>
+        </section>
 
         <footer class="footer">
-            <div class="footer__logo">
 
+            <div class="container">
+                <div class="footer__logo">
+
+                </div>
+
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href=#" class="footer__link">Афиша</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href=#" class="footer__link">Резиденты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href=#" class="footer__link">Площадки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href=#" class="footer__link">Бизнесу</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href=#" class="footer__link">Контакты</a>
+                    </li>
+                </ul> 
+
+                <div class="footer__contacts">
+                    <a href="tel: +7 900 900 00 00" class="footer__tel">+7 900 900 00 00</a>
+                </div>
             </div>
 
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href=#" class="footer__link">Афиша</a>
-                </li>
-                <li class="footer__item">
-                    <a href=#" class="footer__link">Резиденты</a>
-                </li>
-                <li class="footer__item">
-                    <a href=#" class="footer__link">Площадки</a>
-                </li>
-                <li class="footer__item">
-                    <a href=#" class="footer__link">Бизнесу</a>
-                </li>
-                <li class="footer__item">
-                    <a href=#" class="footer__link">Контакты</a>
-                </li>
-            </ul> 
-
-            <div class="footer__contacts">
-                <a href="tel: +7 900 900 00 00" class="footer__tel">+7 900 900 00 00</a>
-            </div>
+            
         </footer>
+
     </div>
 </body>
 </html>
