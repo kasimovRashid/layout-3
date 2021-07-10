@@ -7,12 +7,18 @@ html, body {
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
+    font-weight: normal;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 ul {
     list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
 }
 .wrapper {
     background: #FFFFFF;
@@ -44,10 +50,7 @@ ul {
     margin-left: 48px;
 }
 /* hero */
-img {
-    display: block;
-    max-width: 100%;
-}
+
 .illustration {
     overflow: hidden;
     width: 1340px;
@@ -116,4 +119,99 @@ img {
 /* place */
 .place__title {
     margin-bottom: 33px;
+}
+.place__desc {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+.place-image {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 143px;
+}
+
+.place__image_1,
+.place__image_2,
+.place__image_3 {
+    overflow: hidden;
+}
+.place__image_1 {
+    width: 715px;
+    height: 525px;
+    margin-right: 20px;
+}
+.place__image_2 {
+    width: 505px;
+    height: 218px;
+    margin-bottom: 30px;
+}
+.place__image_3 {
+    width: 505px;
+    height: 277px;
+}
+.place__image_1 > img,
+.place__image_2 > img,
+.place__image_3 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.geo {
+    display: flex;
+    position: absolute;
+ 
+    background-color: white;
+    justify-content: start;
+   
+}   
+/* life */
+.life__list {
+    display: flex;
+    margin-bottom: 140px;
+}
+.life__item {
+    width: 315px;
+    height: 268px; 
+    overflow: hidden;   
+}
+.life__item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* map */
+.map-content {
+    display: flex;
+    justify-content: center;
+}
+.map-left {
+    margin-right: 125px;
+    
+}
+.map__image {
+    position: relative;
+}
+.map__icon {
+    position: absolute;
+    left: 134px;
+    top: 82px;  
+}
+.map__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.map__desc {
+    font-size: 16px;
+    margin-bottom: 24px;
+    
+}
+.map__contacts {
+    font-size: 24px;
+}
+.map__tel {
+    margin-bottom: 10px;
 }
