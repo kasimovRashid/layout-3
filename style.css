@@ -63,7 +63,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 60px;
+    
 }
 .illustration__text {
     color: black;
@@ -75,6 +75,10 @@ img {
     font-family: var(--lora);
 }
 /* info */
+.info {
+    background: #F9F8F5;
+    height: 602px;
+}
 .title {
     font-size: 30px;
     text-align: center;
@@ -82,18 +86,42 @@ img {
     font-family: var(--lora);
     
 }
+.info__title {
+    padding-top: 60px;
+}
 .info__list {
     display: flex;
     margin-bottom: 80px;
 }
 .info__image {
-  
+    position: relative;
+}
+.info__image img{
+    filter: grayscale(100%);
+    
     margin-bottom: 20px;
 }
+.info__image::after {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 27px;
+    bottom: 0;
+    background: rgba(190, 148, 82, 0.4);
+}
+
+
 .info__item {
     width: calc((100%/3) - (20px/3));
+    height: 420px;
+    background: white;
 }
-.info__title {
+.info__list {
+    
+}
+.info__subtitle {
     font-weight: normal;
     font-family: var(--lora);
     
@@ -184,6 +212,9 @@ img {
     object-fit: cover;
 }
 /* map */
+.map__title {
+    margin-bottom: 30px;
+}
 .map-content {
     display: flex;
     justify-content: center;
@@ -194,13 +225,14 @@ img {
 }
 .map__image {
     position: relative;
+    margin-bottom: 60px;
 }
 .map__icon {
     position: absolute;
     left: 134px;
     top: 82px;  
 }
-.map__title {
+.map__address {
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -212,6 +244,32 @@ img {
 .map__contacts {
     font-size: 24px;
 }
-.map__tel {
+.tel {
     margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* footer */
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.footer__logo {
+    width: 93px;
+    height: 80px;
+    background: grey;
+}
+.footer__list {
+    display: flex;
+}
+.footer__item {
+    margin-right: 48px;
+    font-size: 14px;
+    font-family: var(--lato);
+    text-transform: uppercase;
+}
+.footer__tel {
+    margin-right: 25px;
 }
