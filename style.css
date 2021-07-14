@@ -15,6 +15,8 @@ a {
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 img {
     display: block;
@@ -88,10 +90,12 @@ img {
 }
 .info__title {
     padding-top: 60px;
+    margin-bottom: 30px;
 }
 .info__list {
     display: flex;
     margin-bottom: 80px;
+    justify-content: center;
 }
 .info__image {
     position: relative;
@@ -107,20 +111,19 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    right: 27px;
+    right: 0;
     bottom: 0;
     background: rgba(190, 148, 82, 0.4);
 }
 
 
 .info__item {
-    width: calc((100%/3) - (20px/3));
+   
     height: 420px;
     background: white;
+    margin: 0 10px;
 }
-.info__list {
-    
-}
+
 .info__subtitle {
     font-weight: normal;
     font-family: var(--lora);
@@ -145,8 +148,71 @@ img {
     font-size: 24px;
 }
 /* place */
+.place {
+    height: 803px;
+}
+.place-image {
+    position: relative;
+
+    width: 400px;
+    height: 300px;
+
+    
+}
+.place__image_1 > img {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    
+}
+
+.geo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    
+    
+    
+}
+.geo__desc {
+    background: white;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.place {
+    height: 803px;
+    background: white;
+}
 .place__title {
     margin-bottom: 33px;
+    padding-top: 80px;
 }
 .place__desc {
     text-align: center;
@@ -165,11 +231,13 @@ img {
 .place__image_2,
 .place__image_3 {
     overflow: hidden;
+    
 }
 .place__image_1 {
     width: 715px;
     height: 525px;
     margin-right: 20px;
+    
 }
 .place__image_2 {
     width: 505px;
@@ -186,16 +254,28 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    display: flex;
 }
 
 .geo {
     display: flex;
     position: absolute;
- 
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
     background-color: white;
     justify-content: start;
    
 }   
+.geo__desc {
+    background: white;
+   
+    
+} */
+
+
 /* life */
 .life__list {
     display: flex;
